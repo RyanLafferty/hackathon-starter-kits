@@ -1,5 +1,6 @@
 const express = require('express');
 const cors = require('cors');
+const HelloRouter = require('./router/hello');
 
 const port = process.env.PORT || 8080;
 
@@ -21,10 +22,7 @@ app.use(cors(corsOptions));
 app.use(express.json());
 
 // express routes
-app.get('/', (_req, res) => {
-  res.setHeader('Content-Type', 'application/json');
-  res.end(JSON.stringify({ data: { message: 'Hello World!' } }));
-});
+app.use('/', HelloRouter);
 
 // start express server
 app.listen(port, () => {
