@@ -4,5 +4,5 @@ node_modules
 # coverage
 coverage
 
-# builds
-build
+# docs
+README.md
