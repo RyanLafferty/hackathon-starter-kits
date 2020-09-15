@@ -28,5 +28,5 @@ app.use('/', HelloRouter);
 
 // start express server
 app.listen(port, () => {
-  console.log(`not-code-sandbox-api listening at http://localhost:${port}`);
+  console.log(`express-ts listening at http://localhost:${port}`);
 });
